@@ -7,7 +7,7 @@ c_list <- c('US','China','Italy','Spain','Korea, South')
 
 df_plot <- df %>%
   select(2, 5:73) %>%
-  gather(key = time_period, value = number_of_cases, 2:70) %>%
+  gather(key = time_period, value = number_of_cases, 2:(length(df)-3)) %>%
   mutate(time_period = str_remove(time_period, "X")) %>%
   mutate(date = time_period %>% mdy()) %>%
   select(Country.Region, date, number_of_cases) %>%
