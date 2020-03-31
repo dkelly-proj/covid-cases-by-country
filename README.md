@@ -2,7 +2,7 @@
 
 Provides a simple line plot showing the growth in confirmed cases for selected countries. You can alter these countries by editing the "c_list" vector.
 
-Data: https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
+Data courtesy of Johns Hopkins: https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv
 
 Inspired by: https://github.com/fahadtaimur/covid19_dashboard
 
