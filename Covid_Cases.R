@@ -6,7 +6,7 @@ df <- read.csv('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master
 c_list <- c('US','China','Italy','Spain','Korea, South')
 
 df_plot <- df %>%
-  select(2, 5:73) %>%
+  select(2, 5:length(df)) %>%
   gather(key = time_period, value = number_of_cases, 2:(length(df)-3)) %>%
   mutate(time_period = str_remove(time_period, "X")) %>%
   mutate(date = time_period %>% mdy()) %>%
